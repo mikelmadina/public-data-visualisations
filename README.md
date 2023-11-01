@@ -1,5 +1,9 @@
 # public-data-visualisations
 
+### [EAEko biztanleriaren adinaren bilakaera 2001-2023](https://github.com/mikelmadina/public-data-visualisations/tree/main/2023-11_Populazioa)
+
+![](2023-11_Populazioa/pir_eae.png)
+
 ### [Eurovisión 2023](https://github.com/mikelmadina/public-data-visualisations/tree/main/2023-05_Eurovision)
 
 Composición final con Inkscape
