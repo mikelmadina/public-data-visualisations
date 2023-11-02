@@ -180,7 +180,7 @@ pir_eae <- ggplot(
   annotate(geom = "text", 
            x = c(-Inf, -Inf, Inf, Inf), 
            y = c(50, 43, 47, 40), 
-           label = rep(c(aldia_min, aldia_max), 2),
+           label = rep(c(aldia_max, aldia_min), 2),
            color = c(rep(kol_emakumeak, 2), rep(colorspace::darken(kol_gizonak, 0.5), 2)),
            family = "Open Sans", 
            size = 3,
