@@ -7,3 +7,8 @@
 **/ignorar*
 **/ign_*
 **/temp
+**/.Rproj
+**/.Rproj.user
+**/.Rhistory
+**/.RData
+**/.Ruserdata
