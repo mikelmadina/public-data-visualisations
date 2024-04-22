@@ -75,6 +75,7 @@ ggsave(
   device = "png",
   width = 1500 * 2,
   height = 1250 * 2,
-  units = "px"
+  units = "px",
+  bg = "white"
   
 )
