@@ -2,7 +2,6 @@ library(here)
 library(tidyverse)
 library(sf)
 library(glue)
-library(ggsflabel)
 library(systemfonts)
 
 # Hauteskundeetako datuak: https://www.euskadi.eus/ab12aAREWar/resultado/maint
@@ -77,5 +76,14 @@ ggsave(
   height = 1250 * 2,
   units = "px",
   bg = "white"
-  
+)
+
+ggsave(
+  here("2024-04-22-EAE_Hauteskundeak", "mapa.pdf"),
+  plot = p,
+  device = cairo_pdf,
+  width = 1500 * 2,
+  height = 1250 * 2,
+  units = "px",
+  bg = "white"
 )
