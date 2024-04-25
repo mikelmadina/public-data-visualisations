@@ -32,7 +32,8 @@ emaitzak2 <- emaitzak |>
     LH == "Bizkaia" ~ "48",
     .default = ""
   ),
-  kodea = paste0(mun_prov, `Udalerriaren kod.`)) |> 
+  kodea = paste0(mun_prov, `Udalerriaren kod.`),
+  errolda = as.integer(Errolda)) |> 
   pivot_longer(eaj_pnv_13:sumar_54, names_to = "alderdia", values_to = "balorea") |> 
   mutate(alderdia = str_replace(alderdia, "_\\d{2}", "")
          ) |> 
@@ -97,7 +98,7 @@ etiketak_min <- emaitzak2 |>
 
 # grafikoa prestatu
 
-p <- ggplot() +
+p <- ggplot(puntuak) +
   geom_sf(data = poligonoak, mapping = aes(geometry = geometry)) +
   geom_sf(data = puntuak, mapping = aes(geometry = geometry, color = alderdia, size = as.numeric(b_hautagaitzari)), alpha = 0.6) +
   geom_sf_label(data = etiketak_max, aes(geometry = geometry, label = udalerriak), size = 2.5, alpha = 0.8, fill = "#CD661D", color = "white") +
@@ -109,8 +110,8 @@ p <- ggplot() +
   facet_wrap(vars(alderdia)) +
   labs(title = "2024ko Eusko Legebiltzarrerako Hauteskundeak",
        subtitle = "Bozka kopurua alderdi eta udalerriekiko<br>
-       <span style='font-size: 11pt'><span style='color:#CD661D;'>**Zenbakia aurretik duten etiketek**</span> alderdi bakoitzak bozka gehien eskuratu duen udalerria identifikatzen dute.</span> | 
-       <span style='font-size: 11pt'><span style='color:#FFD700;'>**Ehunekoa aurretik duten etiketek**</span> alderdi bakoitzak bozken ehuneko handiena eskuratu duen udalerria identifikatzen dute.</span>",
+       <span style='font-size: 11pt'><span style='color:#CD661D;'>**Zenbakia aurretik duten etiketek**</span> alderdi bakoitzak boto gehien eskuratu duen udalerria identifikatzen dute.</span> | 
+       <span style='font-size: 11pt'><span style='color:#FFD700;'>**Ehunekoa aurretik duten etiketek**</span> alderdi bakoitzak botoen ehuneko handiena eskuratu duen udalerria identifikatzen dute.</span>",
        caption = "Mikel Madina (@neregauzak) | Datuak: euskadi.eus eta geo.euskadi.eus") +
   theme_void() +
   theme(legend.position = "none",
