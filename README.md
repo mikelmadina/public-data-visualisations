@@ -5,6 +5,10 @@
 
 ![](2024-04-22-EAE_Hauteskundeak/mapa.png)
 
+![](2024-04-22-EAE_Hauteskundeak/mapa_alderdika.png)
+
+![](2024-04-22-EAE_Hauteskundeak/espektroa.png)
+
 ### [DVS SOTI 2023 Challenge](https://github.com/mikelmadina/public-data-visualisations/tree/main/2024-03-DVS-survey)
 
 ![](2024-03-DVS-survey/composicion.png)
