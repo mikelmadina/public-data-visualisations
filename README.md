@@ -9,6 +9,8 @@
 
 ![](2024-04-22-EAE_Hauteskundeak/espektroa.png)
 
+![](2024-04-22-EAE_Hauteskundeak/espektroa_naziotasuna.png)
+
 ### [DVS SOTI 2023 Challenge](https://github.com/mikelmadina/public-data-visualisations/tree/main/2024-03-DVS-survey)
 
 ![](2024-03-DVS-survey/composicion.png)
