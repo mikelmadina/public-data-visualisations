@@ -7,6 +7,8 @@
 
 ![](2024-04-22-EAE_Hauteskundeak/mapa_alderdika.png)
 
+![](2024-04-22-EAE_Hauteskundeak/haize_mapa.png)
+
 ![](2024-04-22-EAE_Hauteskundeak/espektroa.png)
 
 ![](2024-04-22-EAE_Hauteskundeak/espektroa_naziotasuna.png)
