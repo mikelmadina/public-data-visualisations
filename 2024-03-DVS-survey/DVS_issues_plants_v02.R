@@ -183,6 +183,7 @@ spirals <- pmap_dfr(argList, generate_spiral) |>
 ###                                   CHART                                      ###
 ####################################################################################
 
+
 p <-
     ggplot(data = data, aes(
       x = x,

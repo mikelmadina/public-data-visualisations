@@ -1,5 +1,8 @@
 # public-data-visualisations
 
+### [Eurovision 2024](https://github.com/mikelmadina/public-data-visualisations/tree/main/2024-05_Eurovision)
+
+![](2024-05_Eurovision/eurovision_2024.png)
 
 ### [2024ko Eusko Legebiltzarrerako Hauteskundeak](https://github.com/mikelmadina/public-data-visualisations/tree/main/2024-04-22-EAE_Hauteskundeak)
 
