@@ -47,7 +47,8 @@ orden <- datos |>
   mutate(TO = fct_reorder(as.factor(TO), puntos))
 
 datos <- datos |> 
-  mutate(TO = fct_relevel(as.factor(TO), levels(orden$TO)))
+  mutate(TO = fct_relevel(as.factor(TO), levels(orden$TO)),
+         posicion = as.numeric(TO))
 
 # Clases de variables necesarias para crear andamiaje estructural para los datos
 
@@ -117,7 +118,8 @@ p <- ggplot(datos_tipo_muga, aes(x = puntuacion, y = n)) +
   theme(plot.background = element_rect(fill = "black"),
         panel.grid = element_blank(),
         legend.position = "none",
-        panel.spacing.x = unit(5, "cm"))
+        panel.spacing.x = unit(5, "cm"),
+        panel.spacing.y = unit(-4, "cm"))
 
 ggsave(here("2024-05_Eurovision", paste0("eurovision_", janitor::make_clean_names(Sys.time()) ,".svg")),
        plot = p,
